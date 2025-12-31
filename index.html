@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Operations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="console-header">
+      <div class="company-identity">
+        <h1>Atlas Operations</h1>
+        <p>Internal Management Console</p>
+      </div>
+      <div class="user-summary">
+        <p class="name">Abdul Waheed Khan</p>
+        <p class="role">Operations Manager</p>
+        <span class="status-indicator">Online</span>
+      </div>
+    </header>
+    <div class="app-shell">
+      <nav class="sidebar">
+        <ul class="nav-items">
+          <li class="nav-item active">
+            <p>Core</p>
+            <ul class="subnav-items">
+              <li class="subnav-item active"><a href="#">Dashboard</a></li>
+              <li class="subnav-item"><a href="#">Projects</a></li>
+              <li class="subnav-item"><a href="#">Assets</a></li>
+              <li class="subnav-item"><a href="#">Personnel</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p>Operations</p>
+            <ul class="subnav-items">
+              <li class="subnav-item"><a href="#">Maintenance Logs</a></li>
+              <li class="subnav-item"><a href="#">Incident Reports</a></li>
+              <li class="subnav-item"><a href="#">Inventory</a></li>
+              <li class="subnav-item"><a href="#">Vendors</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <p>Admin</p>
+            <ul class="subnav-items">
+              <li class="subnav-item"><a href="#">User Management</a></li>
+              <li class="subnav-item"><a href="#">Access Control</a></li>
+              <li class="subnav-item"><a href="#">System Settings</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main class="content-main">
+        <div class="dashboard-title">
+          <h2>Project Status Overview</h2>
+          <p>Live operational snapshot across all regions</p>
+        </div>
+        <div class="kpi-grid">
+          <div class="metric">
+            <h3 class="kpi-label">Active Projects</h3>
+            <p class="kpi-value">18</p>
+            <!--*how to separate number and text-->
+            <p class="kpi-delta">
+              <span class="delta success">+2</span>This Month
+            </p>
+          </div>
+          <div class="metric">
+            <h3 class="kpi-label">Open Incidents</h3>
+            <p class="kpi-value">5</p>
+            <!--*how to separate number and text-->
+            <p class="kpi-delta">
+              <span class="delta success">-1</span>From Last Week
+            </p>
+          </div>
+          <div class="metric">
+            <h3 class="kpi-label">Assets in Maintenance</h3>
+            <p class="kpi-value">12</p>
+            <!--*how to separate number and text-->
+            <p class="kpi-delta">
+              <span class="delta critical">+3</span>Critical
+            </p>
+          </div>
+          <div class="metric">
+            <h3 class="kpi-label">On-Time Completion Rate</h3>
+            <p class="kpi-value">94%</p>
+            <!--*how to separate number and text-->
+            <p class="kpi-delta"><span class="delta warning">-1</span>Trend</p>
+          </div>
+        </div>
+        <div class="active-projects-table">
+          <table class="active-projects">
+            <caption>
+              Active Projects
+            </caption>
+            <thead>
+              <tr>
+                <th>Project ID</th>
+                <th>Project Name</th>
+                <th>Region</th>
+                <th>Manager</th>
+                <th>Status</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>PRJ-2041</th>
+                <td>UAV Maintenance Program</td>
+                <td>South</td>
+                <td>A. Khan</td>
+                <td class="status active">Active</td>
+                <td>2024-11-01</td>
+                <td>2025-03-30</td>
+              </tr>
+              <tr>
+                <th>PRJ-2077</th>
+                <td>Power Grid Upgrade</td>
+                <td>North</td>
+                <td>S. Malik</td>
+                <td class="status delayed">Delayed</td>
+                <td>2024-09-12</td>
+                <td>2025-02-15</td>
+              </tr>
+              <tr>
+                <th>PRJ-2102</th>
+                <td>Warehouse Automatio</td>
+                <td>Central</td>
+                <td>R. Ahemd</td>
+                <td class="status active">Active</td>
+                <td>2024-10-05</td>
+                <td>2025-04-10</td>
+              </tr>
+              <tr>
+                <th>PRJ-2120</th>
+                <td>Fleet Retrofit</td>
+                <td>East</td>
+                <td>H. Raza</td>
+                <td class="status completed">Completed</td>
+                <td>2024-06-01</td>
+                <td>2024-12-20</td>
+              </tr>
+              <tr>
+                <th>PRJ-2144</th>
+                <td>Safety Compliance Rolloutm</td>
+                <td>West</td>
+                <td>N. Iqbal</td>
+                <td class="status active">Active</td>
+                <td>2024-12-01</td>
+                <td>2025-05-30</td>
+              </tr>
+              <tr>
+                <th>PRJ-2159</th>
+                <td>Solar Backup Installation</td>
+                <td>South</td>
+                <td>F. Noor</td>
+                <td class="status on-hold">On-Hold</td>
+                <td>2024-08-15</td>
+                <td>2025-01-31</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <div class="insights">
+        <section class="alerts">
+          <h2>Alerts</h2>
+          <ul>
+            <li>2 maintenance tasks overdue</li>
+            <li>1 compliance audit pending</li>
+            <li>Inventory reorder required (Diesel Filters)</li>
+          </ul>
+        </section>
+        <section class="team-availability">
+          <h2>Team Availability</h2>
+          <ul>
+            <li>Total Staff: 42</li>
+            <li>On Duty: 36</li>
+            <li>On Leave: 4</li>
+            <li>Training: 2</li>
+          </ul>
+        </section>
+        <section class="notes">
+          <h2>Notes</h2>
+          <p>
+            Ensure all regional managers submit weekly reports before Friday
+            18:00. Upcoming audit requires documentation verification for Q4
+            operations.
+          </p>
+        </section>
+      </div>
+    </div>
+    <footer class="console-footer">
+      <address class="footer-content">
+        <small>© 2025 Atlas Operations</small>
+        <p>Environment: <span>Internal | Confidential</span></p>
+        <p>Version: <span>v1.4.2</span></p>
+      </address>
+    </footer>
+  </body>
+</html>
