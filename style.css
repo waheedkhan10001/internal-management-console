@@ -33,6 +33,7 @@ body {
   text-shadow: none;
   color: var(--text-primary);
   background-color: var(--bg-main);
+  min-height: 100vh;
 }
 
 /*header*/
@@ -87,7 +88,6 @@ body {
 .sidebar {
   color: var(--inverted-text);
   background-color: var(--brand-primary);
-  min-height: 100vh;
 }
 .sidebar * {
   color: inherit;
@@ -185,9 +185,7 @@ caption {
 thead tr {
   background-color: var(--bg-cards);
 }
-tbody tr {
-  border-bottom: var(--border-main);
-}
+
 table th {
   font-size: 0.9rem;
   font-weight: 600;
@@ -231,6 +229,7 @@ h2 {
 .footer-content {
   text-align: center;
   padding: 1.5rem 0;
+  border-top: var(--border-main);
 }
 /*INTERACTIVE*/
 .subnav-item:hover {

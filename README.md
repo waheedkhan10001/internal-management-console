@@ -11,6 +11,14 @@ Designed to demonstrate strong fundamentals in **semantic HTML, layout architect
 
 ---
 
+## 🖼️ Screenshots
+
+### Dashboard Overview
+
+![Internal Management Console Dashboard](screenshot.png)
+
+---
+
 ## ✨ Features
 
 - Semantic HTML5 structure (`header`, `nav`, `main`, `section`, `table`, `footer`)
